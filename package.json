@@ -1,0 +1,22 @@
+{
+  "name": "upgradeable-contracts-hardhat",
+  "version": "1.0.0",
+  "description": "Solidity, Openzeppelin  & hardhat upgradeable smart contracts",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Openzeppelin",
+    "upgradeable",
+    "solidity",
+    "hardhat",
+    "Typescript"
+  ],
+  "author": "Enockkipkoech",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.3"
+  }
+}
