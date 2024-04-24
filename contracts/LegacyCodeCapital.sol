@@ -27,4 +27,5 @@ contract LegacyCodeCapital is
         return balanceOf(owner());
     }
     
+    
 }

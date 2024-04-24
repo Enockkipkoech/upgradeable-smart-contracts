@@ -11,7 +11,7 @@ contract ModernCodeCapital is
     OwnableUpgradeable
 {
     function initialize() public initializer {
-        __ERC20_init("ModernCodeCapital", "MCC");
+        // __ERC20_init("ModernCodeCapital", "MCC");
         __Ownable_init(msg.sender);
         mint(msg.sender, 1000000 * 10 ** decimals());
     }
@@ -31,4 +31,5 @@ contract ModernCodeCapital is
     function burn(uint256 amount) public {
         _burn(msg.sender, amount);
     }
+    
 }
