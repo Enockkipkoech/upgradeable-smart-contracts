@@ -2,6 +2,7 @@ import { expect } from "chai";
 import hre, { upgrades } from "hardhat";
 import { LegacyCodeCapital } from "../typechain-types/contracts/LegacyCodeCapital";
 import { ModernCodeCapital } from "../typechain-types/contracts/ModernCodeCapital";
+import { parseEther } from 'ethers'
 
 describe("CodeCapitalProxy", () => {
   it("Should deploy LegacyCodeCapital and ModernCodeCapital", async () => {
@@ -56,5 +57,9 @@ describe("CodeCapitalProxy", () => {
     // Modern Functions
     const modernName = await modernCCToken.name();
     console.log("Modern Name:", modernName);
+    await modernCCToken.mint(modernOwner,1 )
+    console.log("Modern Balance:", (await modernCCToken.balanceOf(modernOwner)).toString());
+
   });
+
 });
